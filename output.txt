@@ -1,0 +1,9 @@
+
+Number of Cheeses with Pasteurized Milk Treatment: 800
+Number of Cheeses with Raw Milk Treatment: 115
+Number of Organic Cheeses with a Moisture Percentage Greater Than 41%: 53
+Number of Cheeses produced with cow milk: 743
+Number of Cheeses produced with goat milk: 214
+Number of Cheeses produced with ewe milk: 62
+Number of Cheeses produced with buffalo milk: 2
+The most common animal milk used for cheeses produced in Canada is Cow Milk
