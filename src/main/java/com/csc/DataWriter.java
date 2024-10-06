@@ -8,7 +8,7 @@ public class DataWriter {
     
     public void writeData(String results) {
         try {
-            FileWriter writer = new FileWriter("output.txt");
+            FileWriter writer = new FileWriter("output.txt"); //write results to output.txt
             writer.write(results);
             writer.close();
         } catch (IOException e) {

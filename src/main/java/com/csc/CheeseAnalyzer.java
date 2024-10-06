@@ -6,7 +6,7 @@ import java.util.List;
 
 public class CheeseAnalyzer {
   public static void main(String[] args) {
-    ReadCSV reader = new ReadCSV();
+    ReadCSV reader = new ReadCSV();   //object from open csv library
     DataAnalyzer analyzer = new DataAnalyzer();
     DataWriter writer = new DataWriter();
 
