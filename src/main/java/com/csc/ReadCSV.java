@@ -12,18 +12,18 @@ public class ReadCSV {
     public List<String[]> readData(String filePath) {
         List<String[]> records = new ArrayList<>();
         try {
-            CSVReader reader = new CSVReader(new FileReader("cheese_data.csv"));
+            CSVReader reader = new CSVReader(new FileReader("cheese_data.csv"));   //initialize reader object
             String[] values;
             while ((values = reader.readNext()) != null) {
-                records.add(values);
+                records.add(values);     //add the read in values to string array list
             }
         reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (CsvValidationException e) {
-            e.printStackTrace();
-        } catch (NumberFormatException e) {
-            e.printStackTrace();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } catch (CsvValidationException cve) {
+            cve.printStackTrace();
+        } catch (NumberFormatException nfe) {
+            nfe.printStackTrace();
         }
         return records;
     }

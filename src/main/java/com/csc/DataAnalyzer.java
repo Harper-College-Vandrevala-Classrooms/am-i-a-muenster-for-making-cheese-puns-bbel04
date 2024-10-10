@@ -42,7 +42,7 @@ public class DataAnalyzer {
         mostCommonAnimal = getMostCommonAnimal();
     }
 
-    private int getMostCommonAnimal() {
+    private int getMostCommonAnimal() { //determine counter with greatest value
         int max = 0;
         for (int i = 1; i < animalMilk.length; i++) {
             if (animalMilk[i] > animalMilk[max]) {
