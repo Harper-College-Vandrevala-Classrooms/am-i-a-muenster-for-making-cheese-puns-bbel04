@@ -12,7 +12,8 @@ public class CheeseAnalyzer {
 
     //store lines read from data set in String List
     List<String[]> records = reader.readData("cheese_data.csv");
-    
+    List<String[]> recordsWithoutHeader = records.subList(1, records.size());
+
     //read and analyze dataset
     analyzer.analyzeData(records);
 
@@ -46,6 +47,8 @@ public class CheeseAnalyzer {
     System.out.println(cheeseAnalysis);
 
     //write results to file
-    writer.writeData(cheeseAnalysis.toString());    
+    writer.writeData(cheeseAnalysis.toString(), "output.txt");    
+
+    writer.writeData(recordsWithoutHeader, "cheese_without_headers.csv"); //write data without headers to new csv file
   }
 }
