@@ -26,6 +26,7 @@ public class CheeseAnalyzer {
     cheeseAnalysis.append("\nNumber of Cheeses produced with goat milk: " + analyzer.animalMilk[1]);
     cheeseAnalysis.append("\nNumber of Cheeses produced with ewe milk: " + analyzer.animalMilk[2]);
     cheeseAnalysis.append("\nNumber of Cheeses produced with buffalo milk: " + analyzer.animalMilk[3]);
+    cheeseAnalysis.append("\nNumber of Lactic Cheeses: " + analyzer.lacticCounter);  //add lactic cheese info to output file
 
     switch (analyzer.mostCommonAnimal) {
       case 0:

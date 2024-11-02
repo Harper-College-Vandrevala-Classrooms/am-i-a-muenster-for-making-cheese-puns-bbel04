@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvValidationException;
+
 
 public class ReadCSV {
     public List<String[]> readData(String filePath) {
@@ -14,14 +14,16 @@ public class ReadCSV {
         try {
             CSVReader reader = new CSVReader(new FileReader("cheese_data.csv"));   //initialize reader object
             String[] values;
-            while ((values = reader.readNext()) != null) {
-                records.add(values);     //add the read in values to string array list
+            try {
+                while ((values = reader.readNext()) != null) { //surround with try/catch
+                    records.add(values);     //add the read in values to string array list
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         reader.close();
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        } catch (CsvValidationException cve) {
-            cve.printStackTrace();
         } catch (NumberFormatException nfe) {
             nfe.printStackTrace();
         }

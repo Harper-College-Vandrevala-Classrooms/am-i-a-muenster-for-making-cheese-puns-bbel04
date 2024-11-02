@@ -6,4 +6,5 @@ Number of Cheeses produced with cow milk: 743
 Number of Cheeses produced with goat milk: 214
 Number of Cheeses produced with ewe milk: 62
 Number of Cheeses produced with buffalo milk: 2
+Number of Lactic Cheeses: 38
 The most common animal milk used for cheeses produced in Canada is Cow Milk
